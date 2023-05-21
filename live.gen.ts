@@ -19,7 +19,7 @@ import * as $$$$$9 from "./islands/SliderJS.tsx";
 import * as $$$$$10 from "./islands/WishlistButton.tsx";
 import * as $$$$$$$$0 from "./sections/BannerGrid.tsx";
 import * as $$$$$$$$1 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$2 from "./sections/Cards.tsx";
+import * as $$$$$$$$2 from "./sections/cardsEdit.tsx";
 import * as $$$$$$$$3 from "./sections/Carousel.tsx";
 import * as $$$$$$$$4 from "./sections/Carousel2.tsx";
 import * as $$$$$$$$5 from "./sections/cookies.tsx";
@@ -178,7 +178,7 @@ const manifest = {
     "$live/sections/UseSlot.tsx": i2$$$$2,
     "deco-sites/121/sections/BannerGrid.tsx": $$$$$$$$0,
     "deco-sites/121/sections/BannerPLP.tsx": $$$$$$$$1,
-    "deco-sites/121/sections/Cards.tsx": $$$$$$$$2,
+    "deco-sites/121/sections/cardsEdit.tsx": $$$$$$$$2,
     "deco-sites/121/sections/Carousel.tsx": $$$$$$$$3,
     "deco-sites/121/sections/Carousel2.tsx": $$$$$$$$4,
     "deco-sites/121/sections/cookies.tsx": $$$$$$$$5,
