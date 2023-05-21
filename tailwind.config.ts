@@ -58,6 +58,9 @@ export default {
           },
         },
       },
+      "colors": {
+        "blue-edit": "#111827",
+      },
     },
   },
 };

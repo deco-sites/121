@@ -7696,7 +7696,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@1e400786d6a6293451abfc231eb02b4e&Colors": {
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&ca26efcdb058ed0c9dc505f8834ac402": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7712,7 +7712,7 @@
           "required": []
         }
       ],
-      "title": "1e400786d6a6293451abfc231eb02b4e&Colors"
+      "title": "Colors&ca26efcdb058ed0c9dc505f8834ac402"
     },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7815,7 +7815,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@1e400786d6a6293451abfc231eb02b4e&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&ca26efcdb058ed0c9dc505f8834ac402",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8010,43 +8010,6 @@
       ],
       "title": "deco-sites/121/components/ui/Features.tsx@Props"
     },
-    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Img": {
-      "type": "object",
-      "properties": {
-        "icon": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "type": "string",
-              "title": "Src"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            },
-            "alt": {
-              "type": "string",
-              "title": "Alt"
-            }
-          },
-          "required": [
-            "src",
-            "href",
-            "alt"
-          ],
-          "title": "Icon"
-        },
-        "title": {
-          "type": "string",
-          "title": "Title"
-        }
-      },
-      "required": [
-        "icon",
-        "title"
-      ],
-      "title": "Img"
-    },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@FooterItens": {
       "type": "object",
       "properties": {
@@ -8057,14 +8020,29 @@
               "type": "string",
               "title": "Title"
             },
-            "href": {
+            "subitemTitle": {
               "type": "string",
-              "title": "Href"
+              "title": "Subitem Title"
+            },
+            "subitemHref": {
+              "type": "string",
+              "title": "Subitem Href"
+            },
+            "subitemTitle2": {
+              "type": "string",
+              "title": "Subitem Title2"
+            },
+            "subitemHref2": {
+              "type": "string",
+              "title": "Subitem Href2"
             }
           },
           "required": [
             "title",
-            "href"
+            "subitemTitle",
+            "subitemHref",
+            "subitemTitle2",
+            "subitemHref2"
           ],
           "title": "Item1"
         },
@@ -8075,14 +8053,29 @@
               "type": "string",
               "title": "Title"
             },
-            "href": {
+            "subitemTitle": {
               "type": "string",
-              "title": "Href"
+              "title": "Subitem Title"
+            },
+            "subitemHref": {
+              "type": "string",
+              "title": "Subitem Href"
+            },
+            "subitemTitle2": {
+              "type": "string",
+              "title": "Subitem Title2"
+            },
+            "subitemHref2": {
+              "type": "string",
+              "title": "Subitem Href2"
             }
           },
           "required": [
             "title",
-            "href"
+            "subitemTitle",
+            "subitemHref",
+            "subitemTitle2",
+            "subitemHref2"
           ],
           "title": "Item2"
         },
@@ -8093,58 +8086,49 @@
               "type": "string",
               "title": "Title"
             },
-            "href": {
+            "subitemTitle": {
               "type": "string",
-              "title": "Href"
+              "title": "Subitem Title"
+            },
+            "subitemHref": {
+              "type": "string",
+              "title": "Subitem Href"
+            },
+            "subitemTitle2": {
+              "type": "string",
+              "title": "Subitem Title2"
+            },
+            "subitemHref2": {
+              "type": "string",
+              "title": "Subitem Href2"
             }
           },
           "required": [
             "title",
-            "href"
+            "subitemTitle",
+            "subitemHref",
+            "subitemTitle2",
+            "subitemHref2"
           ],
           "title": "Item3"
-        },
-        "item4": {
-          "type": "object",
-          "properties": {
-            "title": {
-              "type": "string",
-              "title": "Title"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "title",
-            "href"
-          ],
-          "title": "Item4"
         }
       },
       "required": [
         "item1",
         "item2",
-        "item3",
-        "item4"
+        "item3"
       ],
       "title": "FooterItens"
     },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "img": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Img",
-          "title": "Img"
-        },
         "footeritens": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@FooterItens",
           "title": "Footeritens"
         }
       },
       "required": [
-        "img",
         "footeritens"
       ],
       "title": "deco-sites/121/sections/Footer.tsx@Props"
