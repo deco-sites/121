@@ -82,6 +82,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/121/sections/BannerGrid.tsx",
               "deco-sites/121/sections/BannerPLP.tsx",
+              "deco-sites/121/sections/cards.tsx",
               "deco-sites/121/sections/Carousel.tsx",
               "deco-sites/121/sections/Carousel2.tsx",
               "deco-sites/121/sections/cookies.tsx",
@@ -90,6 +91,7 @@
               "deco-sites/121/sections/Footer.tsx",
               "deco-sites/121/sections/Header.tsx",
               "deco-sites/121/sections/Highlights.tsx",
+              "deco-sites/121/sections/jumbotron.tsx",
               "deco-sites/121/sections/LinkTree.tsx",
               "deco-sites/121/sections/ProductDetails.tsx",
               "deco-sites/121/sections/ProductShelf.tsx",
@@ -7694,7 +7696,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&ca26efcdb058ed0c9dc505f8834ac402": {
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@1e400786d6a6293451abfc231eb02b4e&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7710,7 +7712,7 @@
           "required": []
         }
       ],
-      "title": "Colors&ca26efcdb058ed0c9dc505f8834ac402"
+      "title": "1e400786d6a6293451abfc231eb02b4e&Colors"
     },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7813,7 +7815,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&ca26efcdb058ed0c9dc505f8834ac402",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@1e400786d6a6293451abfc231eb02b4e&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8008,224 +8010,144 @@
       ],
       "title": "deco-sites/121/components/ui/Features.tsx@Props"
     },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@StringItem": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        }
-      },
-      "required": [
-        "label",
-        "href"
-      ],
-      "title": "StringItem"
-    },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem": {
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Img": {
       "type": "object",
       "properties": {
         "icon": {
-          "anyOf": [
-            {
+          "type": "object",
+          "properties": {
+            "src": {
               "type": "string",
-              "const": "ChevronLeft"
+              "title": "Src"
             },
-            {
+            "href": {
               "type": "string",
-              "const": "ChevronRight"
+              "title": "Href"
             },
-            {
+            "alt": {
               "type": "string",
-              "const": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut"
+              "title": "Alt"
             }
+          },
+          "required": [
+            "src",
+            "href",
+            "alt"
           ],
-          "type": "string",
           "title": "Icon"
-        }
-      },
-      "required": [
-        "icon"
-      ],
-      "title": "IconItem"
-    },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@StringItem"
         },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem"
-        }
-      ],
-      "title": "IconItem|StringItem"
-    },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem"
-      },
-      "title": "IconItem|StringItem[]"
-    },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section": {
-      "type": "object",
-      "properties": {
-        "label": {
+        "title": {
           "type": "string",
-          "title": "Label"
-        },
-        "children": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem[]",
-          "title": "Children"
+          "title": "Title"
         }
       },
       "required": [
-        "label",
-        "children"
+        "icon",
+        "title"
       ],
-      "title": "Section"
+      "title": "Img"
     },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section"
-      },
-      "title": "Section[]"
-    },
-    "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@FooterItens": {
       "type": "object",
       "properties": {
-        "sections": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section[]",
-          "title": "Sections"
+        "item1": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item1"
+        },
+        "item2": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item2"
+        },
+        "item3": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item3"
+        },
+        "item4": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item4"
         }
       },
-      "required": [],
-      "title": "deco-sites/121/components/footer/Footer.tsx@Props"
+      "required": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ],
+      "title": "FooterItens"
+    },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "img": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Img",
+          "title": "Img"
+        },
+        "footeritens": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@FooterItens",
+          "title": "Footeritens"
+        }
+      },
+      "required": [
+        "img",
+        "footeritens"
+      ],
+      "title": "deco-sites/121/sections/Footer.tsx@Props"
     },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Img": {
       "type": "object",
@@ -8436,6 +8358,34 @@
         "title"
       ],
       "title": "deco-sites/121/components/ui/Highlights.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvanVtYm90cm9uLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "firstButton": {
+          "type": "string",
+          "title": "First Button"
+        },
+        "secondButton": {
+          "type": "string",
+          "title": "Second Button"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "firstButton",
+        "secondButton"
+      ],
+      "title": "deco-sites/121/sections/jumbotron.tsx@Props"
     },
     "ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy91aS9MaW5rVHJlZS50c3g=@Link": {
       "type": "object",
@@ -11040,6 +10990,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvY2FyZHMudHN4": {
+      "title": "deco-sites/121/sections/cards.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/121/sections/cards.tsx"
+          ],
+          "default": "deco-sites/121/sections/cards.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4": {
       "title": "deco-sites/121/sections/Carousel.tsx",
       "type": "object",
@@ -11150,7 +11116,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props"
         }
       ],
       "required": [
@@ -11205,6 +11171,27 @@
             "deco-sites/121/sections/Highlights.tsx"
           ],
           "default": "deco-sites/121/sections/Highlights.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvanVtYm90cm9uLnRzeA==": {
+      "title": "deco-sites/121/sections/jumbotron.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvanVtYm90cm9uLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/121/sections/jumbotron.tsx"
+          ],
+          "default": "deco-sites/121/sections/jumbotron.tsx"
         }
       }
     },
@@ -12465,6 +12452,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQmFubmVyUExQLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvY2FyZHMudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
         },
         {
@@ -12487,6 +12477,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvanVtYm90cm9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvTGlua1RyZWUudHN4"
