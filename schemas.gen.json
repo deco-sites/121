@@ -83,6 +83,7 @@
               "deco-sites/121/sections/BannerGrid.tsx",
               "deco-sites/121/sections/BannerPLP.tsx",
               "deco-sites/121/sections/Carousel.tsx",
+              "deco-sites/121/sections/Carousel2.tsx",
               "deco-sites/121/sections/cookies.tsx",
               "deco-sites/121/sections/DesignSystem.tsx",
               "deco-sites/121/sections/Features.tsx",
@@ -7289,6 +7290,164 @@
       "required": [],
       "title": "deco-sites/121/components/ui/BannerCarousel.tsx@Props"
     },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@Img": {
+      "type": "object",
+      "properties": {
+        "icon": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "title": "Src"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "href",
+            "alt"
+          ],
+          "title": "Icon"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        }
+      },
+      "required": [
+        "icon",
+        "title"
+      ],
+      "title": "Img"
+    },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@NavItens": {
+      "type": "object",
+      "properties": {
+        "item1": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item1"
+        },
+        "item2": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item2"
+        },
+        "item3": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item3"
+        },
+        "item4": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item4"
+        },
+        "item5": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "title",
+            "href"
+          ],
+          "title": "Item5"
+        }
+      },
+      "required": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ],
+      "title": "NavItens"
+    },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "img": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@Img",
+          "title": "Img"
+        },
+        "navitens": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@NavItens",
+          "title": "Navitens"
+        }
+      },
+      "required": [
+        "img",
+        "navitens"
+      ],
+      "title": "deco-sites/121/sections/Carousel2.tsx@Props"
+    },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvY29va2llcy50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -10902,6 +11061,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==": {
+      "title": "deco-sites/121/sections/Carousel2.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/121/sections/Carousel2.tsx"
+          ],
+          "default": "deco-sites/121/sections/Carousel2.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvY29va2llcy50c3g=": {
       "title": "deco-sites/121/sections/cookies.tsx",
       "type": "object",
@@ -12286,6 +12466,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvQ2Fyb3VzZWwyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy8xMjEvc2VjdGlvbnMvY29va2llcy50c3g="
