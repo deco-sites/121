@@ -1,132 +1,86 @@
-export default function threeCards() {
+export type carditens= {
+   card1:{title: string, description: string, badge: string, type: string};
+   card2:{title: string, description: string, badge: string, type: string};
+   card3:{title: string, description: string, badge: string, type: string};
+}
+
+export interface Props {
+  cardItens: carditens;
+}
+
+export default function threeCards({
+   
+ cardItens = {
+    card1: {title: "Investimentos", description: "Faça do seu dinheiro o seu aliado", badge: "NEW", type:"Produtos"},
+    card2: {title: "Aportes", description: "A importância dos aportes mensais", badge: "NEW", type:"Produtos"},
+    card3: {title: "CDB", description: "Quanto mais rentabilidade melhor o custo", badge: "NEW", type:"Produtos"},
+ } 
+}: Props, ) {
   return (
-    <div class="flex flex-col items-center justify-around md:flex-row  mx-10">
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
+    <div class="flex flex-col items-center justify-around md:flex-row m-20">
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
           <img
-            class="rounded-t-lg"
-            src="/angular.png"
-            alt=""
-            width="400px"
-            height="200px"
+            src="/undraw.svg"
+            alt="Shoes"
+            height="100px"
+            width="100px"
           />
-        </a>
-        <div class="p-5">
-          <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021
-            sofar, in reverse chronological order.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Read more
-            <svg
-              aria-hidden="true"
-              class="w-4 h-4 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              >
-              </path>
-            </svg>
-          </a>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            {cardItens.card1.title}
+            <div class="badge bg-green-500">{cardItens.card1.badge}</div>
+          </h2>
+          <p>{cardItens.card1.description}</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">{cardItens.card1.type}</div>
+          </div>
         </div>
       </div>
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
+
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
           <img
-            class="rounded-t-lg"
-            src="/vue.png"
-            alt=""
-            width="400px"
-            height="200px"
+            src="/graph.svg"
+            alt="Shoes"
+            height="290px"
+            width="100px"
           />
-        </a>
-        <div class="p-5">
-          <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021
-            sofar, in reverse chronological order.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Read more
-            <svg
-              aria-hidden="true"
-              class="w-4 h-4 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              >
-              </path>
-            </svg>
-          </a>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+          {cardItens.card2.title}
+            <div class="badge bg-green-400">{cardItens.card2.badge}</div>
+          </h2>
+          <p>{cardItens.card2.description}</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">{cardItens.card2.type}</div>
+          </div>
         </div>
       </div>
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
+
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
           <img
-            class="rounded-t-lg"
-            src="/react.png"
-            alt=""
-            width="400px"
-            height="200px"
+            src="/drawer.svg"
+            alt="Shoes"
+            height="100px"
+            width="100px"
           />
-        </a>
-        <div class="p-5">
-          <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021
-            sofar, in reverse chronological order.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Read more
-            <svg
-              aria-hidden="true"
-              class="w-4 h-4 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              >
-              </path>
-            </svg>
-          </a>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+          {cardItens.card3.title}
+            <div class="badge bg-green-500">{cardItens.card3.badge}</div>
+          </h2>
+          <p>{cardItens.card3.description}</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">{cardItens.card3.type}</div>
+          </div>
         </div>
       </div>
+
     </div>
   );
 }
