@@ -1,5 +1,4 @@
-export default function header(
-) {
+export default function header() {
   return (
     <div class="w-full flex justify-center my-20">
       <div class="stats stats-vertical lg:stats-horizontal shadow">
